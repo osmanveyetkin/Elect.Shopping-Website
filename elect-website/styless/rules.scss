@@ -1,0 +1,82 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s ease;
+}
+$maincolor: #739072;
+$blackcolor: #0e0e0e;
+$maincolor-dark: #4f6f52;
+$maincolor-light: #86a789;
+$thincolor: #d2e3c8;
+:root {
+  --border: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+html {
+  font-size: 62.5%;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: white;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 3rem;
+    background-color: $blackcolor;
+  }
+}
+
+body {
+  background-color: $maincolor;
+  overflow-x: hidden;
+}
+section {
+  padding: 3.5rem 7%;
+}
+a {
+  color: $blackcolor;
+  text-decoration: none;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 2rem 3.75rem;
+  border-radius: 30rem;
+  font-size: 1.7rem;
+  color: $thincolor;
+  background-color: $blackcolor;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+    color: $maincolor-dark;
+    transform: scale(1.1);
+  }
+}
+.search-input {
+  font-size: 1.6rem;
+  color: #0e0e0e;
+  padding: 1rem;
+  text-transform: none;
+  border-radius: 3rem;
+}
+
+.heading {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin-bottom: 3.5rem;
+  border-bottom: 0.1rem solid #fff;
+  span {
+    color: $blackcolor;
+    text-transform: uppercase;
+  }
+}
